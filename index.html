@@ -114,10 +114,10 @@
 											<h3>Tempus ullamcorper</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="https://iriina-grey.github.io/iriian-grey.github.io/assets/web/viewer.html?file=https://iriina-grey.github.io/iriian-grey.github.io/assets/pdf/001.pdf" class="button">More</a></li>
 											</ul>
 										</article>
-										<article>
+									<!--	<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3>Sed etiam facilis</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
@@ -125,7 +125,7 @@
 												<li><a href="#" class="button">More</a></li>
 											</ul>
 										</article>
-										<article>
+										<!--<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
 											<h3>Feugiat lorem aenean</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
@@ -133,14 +133,15 @@
 												<li><a href="#" class="button">More</a></li>
 											</ul>
 										</article>
-										<article>
+									<!--	<article>
+
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
 											<h3>Amet varius aliquam</h3>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
-										</article>
+										</article>-->
 									</div>
 								</section>
 
@@ -249,28 +250,7 @@
 			<script src="assets/js/main.js"></script>
 			
 			<script src="assets/js/pdfjs/build/pdf.js"></script>
-			<script type="text/javascript">
-
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-                    'assets/js/pdfjs/build/pdf.worker.js';
-    var loadingTask = pdfjsLib.getDocument('assets/pdf/001.pdf');//  _url为后台请求pdf流的路径
-    loadingTask.promise.then(function(pdf) {
-        pdf.getPage(1).then(function(page) {
-           
-            var scale = 1.5;
-            var viewport = page.getViewport(scale);
-            var canvas = document.getElementById('the-canvas');
-            var context = canvas.getContext('2d');
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-            var renderContext = {
-                canvasContext: context,
-                viewport: viewport,
-            };
-            page.render(renderContext);
-        });
-    });
-</script>
+			
 
 
 	</body>
